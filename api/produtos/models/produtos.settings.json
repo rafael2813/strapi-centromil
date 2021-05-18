@@ -1,0 +1,58 @@
+{
+  "kind": "collectionType",
+  "collectionName": "produtos",
+  "info": {
+    "name": "Produtos",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "perfil": {
+      "type": "string"
+    },
+    "secao": {
+      "type": "string"
+    },
+    "material": {
+      "type": "string"
+    },
+    "dimensoes": {
+      "type": "string"
+    },
+    "pecas": {
+      "type": "integer"
+    },
+    "area": {
+      "type": "float"
+    },
+    "preco_kg": {
+      "type": "float"
+    },
+    "peso_m": {
+      "type": "float"
+    },
+    "preco_m": {
+      "type": "float"
+    },
+    "peso_peca": {
+      "type": "float"
+    },
+    "preco_peca": {
+      "type": "float"
+    },
+    "peso_total": {
+      "type": "float"
+    },
+    "valor_total": {
+      "type": "float"
+    },
+    "orcamento": {
+      "model": "orcamentos",
+      "via": "produtos"
+    }
+  }
+}

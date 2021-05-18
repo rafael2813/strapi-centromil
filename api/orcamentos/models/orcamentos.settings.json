@@ -1,0 +1,43 @@
+{
+  "kind": "collectionType",
+  "collectionName": "orcamentos",
+  "info": {
+    "name": "orcamentos",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "empresa": {
+      "type": "string"
+    },
+    "nome": {
+      "type": "string"
+    },
+    "client_fornec": {
+      "type": "string"
+    },
+    "data_hora": {
+      "type": "datetime"
+    },
+    "n_itens": {
+      "type": "integer"
+    },
+    "peso_total": {
+      "type": "float"
+    },
+    "valor_total": {
+      "type": "float"
+    },
+    "produtos": {
+      "via": "orcamento",
+      "collection": "produtos"
+    },
+    "descricao": {
+      "type": "text"
+    }
+  }
+}
